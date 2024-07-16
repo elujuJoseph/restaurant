@@ -1,0 +1,66 @@
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jong Bites Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jong Bites</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to Jong Bites</h2>
+        <p>Enjoy the finest dishes crafted with passion.</p>
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Spicy Ramen</h3>
+            <p>A deliciously spicy bowl of ramen with fresh ingredients.</p>
+            <span class="price">$12.99</span>
+        </div>
+        <div class="menu-item">
+            <h3>Sushi Platter</h3>
+            <p>An assortment of fresh sushi, prepared to perfection.</p>
+            <span class="price">$19.99</span>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Jong Bites is a family-owned restaurant offering the best in Asian cuisine. Our chefs are dedicated to providing a delightful dining experience.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jong Bites. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message! We will get back to you soon.');
+});
+    </script>
+</body>
+</html>
